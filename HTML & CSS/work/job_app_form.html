@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            border: 1px solid #007bff;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #4f5749;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="password"],
+        input[type="url"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="radio"] {
+            margin: 0 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form method="post">
+            <label for="name">Name*</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+
+            <label>Gender*</label>
+            Male<input type="radio" id="male" name="gender" value="male" required />
+            FeMale<input type="radio" id="female" name="gender" value="female" required /><br /><br />
+
+            <label for="laptop">Laptop Brands*</label>
+            <select id="laptop" required>
+                <option value="Apple">Apple</option>
+                <option value="Asus">Asus</option>
+                <option value="HP">HP</option>
+            </select>
+
+            <label for="age">Age*</label>
+            <input type="number" id="age" placeholder="Enter your age" required />
+
+            <label for="dob">DOB*</label>
+            <input type="date" id="dob" required />
+
+            <label for="portfolio">Portfolio URL*</label>
+            <input type="url" id="portfolio" placeholder="Paste your portfolio URL" required />
+
+            <label for="password">Password*</label>
+            <input type="password" id="password" placeholder="Enter your password" required />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

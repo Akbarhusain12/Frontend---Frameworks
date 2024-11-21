@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table</title>
+    <style>
+        table,th,tr,td{
+            border: 3px solid black;
+            border-color: bisque;
+            font-size: 20px;
+            border-collapse: collapse;
+            padding: 10px;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: brown;">Land of Boxes Order form</h1>
+    <form >
+        Name : <input type="text" placeholder="Enter a Name"><br><br>
+        Email : <input type="email" placeholder="Enter a email"><br><br>
+        Address : <textarea rows="4" cols="50" placeholder="Enter your message here..."></textarea><br><br> 
+        Postcode : <input type="number" placeholder="Enter a Postcode">
+    </form>
+    <br><br><br><br><br>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Part Number</th>
+            <th>Quantity</th>
+            <th>Unit price</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>EconoBox</td>
+            <td>LB100</td>
+            <td><input type="number"></td>
+            <td>R5</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Standard Box</td>
+            <td>LB200</td>
+            <td><input type="number"></td>
+            <td>R10</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Premium Box</td>
+            <td>LB300</td>
+            <td><input type="number"></td>
+            <td>R15</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Deluxe Box</td>
+            <td>LB400</td>
+            <td><input type="number"></td>
+            <td>R20</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4" >Total</td>
+            <td><input type="number" name="" id=""></td>
+        </tr>
+    </table>
+</body>
+</html>

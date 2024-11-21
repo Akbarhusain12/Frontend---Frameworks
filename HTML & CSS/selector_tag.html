@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* Universal selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Tag selector */
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    /* Class selector */
+    .highlight {
+      background-color: yellow;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    /* ID selector */
+    #main {
+      border: 2px solid black;
+      padding: 20px;
+      width: 80%;
+      margin: 20px auto;
+      background-color: #f4f4f4;
+    }
+
+    /* Descendant selector */
+    #main p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Grouped selector */
+    h2, p {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Styling Example</h1>
+
+  <div id="main">
+    <h2>Welcome to the CSS Example</h2>
+    <p>This is a simple example to demonstrate how to use selectors in CSS.</p>
+    <p class="highlight">This text is highlighted using the <code>.highlight</code> class.</p>
+  </div>
+
+</body>
+</html>

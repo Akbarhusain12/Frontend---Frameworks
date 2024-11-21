@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Properties Example</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 100px;
+            border: 2px solid #333;
+            margin-bottom: 20px;
+            position: relative;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .visible {
+            overflow: visible; 
+            background-color: #ff7e5f;
+        }
+
+        .hidden {
+            overflow: hidden; 
+            background-color: #feb47b;
+        }
+
+        .scroll {
+            overflow: scroll;
+            background-color: #ff6f61;
+        }
+
+        .auto {
+            overflow: auto; 
+            background-color: #6fffb0;
+        }
+
+        .clip {
+            overflow: clip; 
+            background-color: #5f9f7e;
+        }
+
+        .content {
+            width: 300px; 
+            height: 150px; 
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container visible">
+        <div class="content">
+            Overflow: Visible - This content is not clipped and extends beyond the container.
+        </div>
+    </div>
+
+    <div class="container hidden">
+        <div class="content">
+            Overflow: Hidden - This content is clipped, and you cannot see anything beyond the container's dimensions.
+        </div>
+    </div>
+
+    <div class="container scroll">
+        <div class="content">
+            Overflow: Scroll - Scrollbars appear even if content fits. This is more apparent with more content.
+        </div>
+    </div>
+
+    <div class="container auto">
+        <div class="content">
+            Overflow: Auto - Scrollbars appear only when necessary. Try resizing your browser window!
+        </div>
+    </div>
+
+    <div class="container clip">
+        <div class="content">
+            Overflow: Clip - This content is clipped and no scrollbars are shown.
+        </div>
+    </div>
+
+</body>
+</html>

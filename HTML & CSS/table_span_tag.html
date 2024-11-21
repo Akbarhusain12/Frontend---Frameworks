@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table with Rowspan and Colspan</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Table with Rowspan and Colspan Example</h2>
+
+    <table>
+      <tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Average</th>
+        <th rowspan="2">Red Eyes</th>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td>weight</td>
+      </tr>
+      <tr>
+        <td>Model 2</td>
+        <td>$1200</td>
+        <td>$1500</td>
+        <td>$2000</td>
+      </tr>
+      <tr>
+        <td>Model 3</td>
+        <td>$1200</td>
+        <td>$1500</td>
+        <td>$2000</td>
+      </tr>
+    </table>
+    <br /><br />
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>9:00 - 10:00</th>
+        <th>10:00 - 11:00</th>
+        <th>11:00 - 12:00</th>
+        <th>12:00 - 1:00</th>
+        <th colspan="2">Lunch Break</th>
+        <th>2:00 - 3:00</th>
+        <th>3:00 - 4:00</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td rowspan="2">Math</td>
+        <td>English</td>
+        <td>Physics</td>
+        <td>History</td>
+        <td colspan="2" rowspan="5">12:00 - 2:00</td>
+        <td>PE</td>
+        <td>Chemistry</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Biology</td>
+        <td>Chemistry</td>
+        <td>Math</td>
+        <td>Computer Science</td>
+        <td style="color: rgb(201, 16, 16); font-size: 20px">Free</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>English</td>
+        <td rowspan="2">Physics</td>
+        <td>Geography</td>
+        <td>History</td>
+        <td>PE</td>
+        <td rowspan="2">Art</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Chemistry</td>
+        <td>Biology</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td rowspan="2">History</td>
+        <td>English</td>
+        <td>Math</td>
+        <td>Computer Science</td>
+        <td>Physics</td>
+        <td>Chemistry</td>
+      </tr>
+    </table>
+    <br /><br /><br />
+    <table>
+      <tr>
+        <th>Device</th>
+        <th>Brand</th>
+        <th colspan="2">Specification</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Smartphone</td>
+        <td rowspan="3">Apple</td>
+        <th>Model</th>
+        <th>Storage</th>
+      </tr>
+      <tr>
+        <td>iPhone 12</td>
+        <td>256 GB</td>
+      </tr>
+      <tr>
+        <td>iPhone 10</td>
+        <td>128 GB</td>
+      </tr>
+      <tr>
+        <td>laptop</td>
+        <td>HP</td>
+        <td colspan="2">15.6" Display</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>Samsung</td>
+        <td colspan="2">10" Display</td>
+      </tr>
+    </table>
+  </body>
+</html>

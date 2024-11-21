@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Examples</title>
+    <style>
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .gradient-box {
+            width: 400px;
+            height: 400px;
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .linear-gradient {
+            background: linear-gradient(to top, blue, green);
+        }
+
+        .radial-gradient {
+            background: radial-gradient(circle, rgb(36, 34, 30), rgb(248, 118, 248));
+        }
+
+        .conic-gradient {
+            background: conic-gradient(red, yellow, green, blue);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Gradient Examples</h1>
+
+    <div class="container">
+
+        <div class="gradient-box linear-gradient"></div>
+
+        <div class="gradient-box radial-gradient"></div>
+
+        <div class="gradient-box conic-gradient"></div>
+    </div>
+
+</body>
+</html>

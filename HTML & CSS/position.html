@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Properties Example</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 2000px;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 200px;
+        margin: 20px;
+        border: 2px solid #333;
+        padding: 10px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .static {
+        position: static;
+        background-color: #ff7e5f;
+        height: 40px;
+      }
+
+      .relative {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        background-color: #feb47b;
+        height: 40px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        background-color: #ff6f61;
+        height: 30px;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 40px;
+        background-color: #5f9f7e;
+        height: 40px;
+      }
+
+      .content {
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .fixed {
+        border: 2px solid black;
+        padding: 15px;
+        height: 20px;
+        left: 50px;
+        background-color: antiquewhite;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="static">Position: Static</div>
+    </div>
+
+    <div class="container">
+      <div class="relative">Position: Relative</div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="absolute">I am an absolute position box!</div>
+      </div>
+    </div>
+
+      <div class="fixed">I am an fixed position box!</div>
+
+    <div class="container">
+      <div class="content">
+        Scroll down to see the sticky effect.
+        <div class="sticky">
+          Position: Sticky - I stick to the top when you scroll!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

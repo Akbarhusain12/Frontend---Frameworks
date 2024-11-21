@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Container */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f4ff, #cfd8ff);
+        }
+
+        /* Skills Container */
+        .skill-mf {
+            max-width: 450px;
+            width: 90%;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .title-s {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Category Section */
+        .skill-category {
+            text-align: left;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f9fbff;
+        }
+
+        .category-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #0056cc;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .category-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #0056cc;
+            margin-top: 5px;
+        }
+
+        /* Skill Item */
+        .skill-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.1em;
+            color: #333;
+            padding: 8px 0;
+            transition: transform 0.2s ease;
+        }
+
+        .skill-item i {
+            color: #0056cc;
+            font-size: 1.5em;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect */
+        .skill-item:hover {
+            transform: translateX(5px);
+        }
+
+        .skill-item:hover i {
+            color: #003399;
+        }
+
+        /* Subtle Divider */
+        .skill-item:not(:last-child) {
+            border-bottom: 1px solid #e0e4e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="skill-mf">
+        <p class="title-s">Skills</p>
+        
+        <!-- Programming Languages -->
+        <div class="skill-category">
+            <p class="category-title">Programming Languages</p>
+            <div class="skill-item">
+                <i class="fab fa-python"></i> <span>Python</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js-square"></i> <span>JavaScript, HTML, CSS</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-node-js"></i> <span>NodeJs</span>
+            </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="skill-category">
+            <p class="category-title">Machine Learning</p>
+            <div class="skill-item">
+                <i class="fas fa-database"></i> <span>Pandas</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-cogs"></i> <span>NumPy</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-brain"></i> <span>Scikit-learn</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-chart-line"></i> <span>Matplotlib</span>
+            </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="skill-category">
+            <p class="category-title">Tools & Technologies</p>
+            <div class="skill-item">
+                <i class="fas fa-code"></i> <span>VS Code</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-book"></i> <span>Jupyter Notebook</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-git-alt"></i> <span>Git & GitHub</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-project-diagram"></i> <span>N8N (Nodemation)</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

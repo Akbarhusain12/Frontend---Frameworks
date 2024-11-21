@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Absolute Units */
+    .box-px {
+      width: 200px;  /* Fixed width of 200 pixels */
+      height: 100px;
+      background-color: lightcoral;
+      margin-bottom: 20px;
+    }
+
+    /* Percentage and Viewport Units */
+    .box-percent {
+      width: 50%;   /* 50% of the container's width */
+      height: 100px;
+      background-color: lightblue;
+      margin-bottom: 20px;
+    }
+
+    .box-vw {
+      width: 50vw;  /* 50% of the viewport's width */
+      height: 100px;
+      background-color: rgb(11, 45, 11);
+      margin-bottom: 20px;
+      color: aliceblue;
+    }
+
+    /* Font Size: em and rem */
+    .text-em {
+      font-size: 2em;  /* 2 times the size of the parent font */
+      margin-bottom: 20px;
+    }
+
+    .text-rem {
+      font-size: 1.5rem; /* 1.5 times the root font size */
+      margin-bottom: 20px;
+    }
+
+    /* Responsive Box using vmin and vmax */
+    .box-vmin {
+      width: 30vmin;  /* 30% of the smaller side (height/width) of the viewport */
+      height: 30vmin;
+      background-color: orange;
+      margin-bottom: 20px;
+    }
+
+    .box-vmax {
+      width: 30vmax;  /* 30% of the larger side (height/width) of the viewport */
+      height: 30vmax;
+      background-color: violet;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>CSS Units Example</h1>
+
+  <div class="box-px">Box with 200px width</div>
+
+  <div class="box-percent">Box with 50% width of the parent container</div>
+
+  <div class="box-vw">Box with 50vw width (50% of the viewport width)</div>
+
+  <p class="text-em">This text has a font-size of 2em (2 times the parent size).</p>
+
+  <p class="text-rem">This text has a font-size of 1.5rem (1.5 times the root font size).</p>
+
+  <div class="box-vmin">Box with 30vmin width and height (relative to the smaller viewport side)</div>
+
+  <div class="box-vmax">Box with 30vmax width and height (relative to the larger viewport side)</div>
+
+</body>
+</html>

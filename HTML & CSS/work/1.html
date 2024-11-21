@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: rgb(25, 20, 20);
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(25, 20, 20);
+        padding: 10px 25px;
+      }
+
+      nav .spimg img {
+        width: 60px;
+        height: 60px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: rgb(30, 215, 96);
+      }
+
+      #download {
+        background-color: rgb(25, 20, 20);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+      }
+
+      #download h1 {
+        font-weight: 700;
+        line-height: 2;
+      }
+
+      #download h2 {
+        font-weight: 500;
+        line-height: 3;
+      }
+
+      #download .button {
+        background-color: rgb(255, 255, 255);
+        padding: 12px;
+        margin-bottom: 35px;
+        font-weight: 500;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        transition: transform 0.3s ease;
+      }
+
+      #download .button:hover {
+        transform: scale(1.02);
+      }
+
+      @media (max-width: 650px) {
+        #download .button {
+          width: 100%;
+        }
+      }
+
+      #difference-table {
+        background-color: rgb(246, 246, 246);
+        text-align: center;
+        padding: 20px 40px;
+      }
+
+      #difference-table h1 {
+        font-weight: 700;
+        padding: 0px 50px;
+      }
+
+      table {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px 45px;
+        border-collapse: collapse;
+      }
+
+      th {
+        font-weight: 300;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: left;
+      }
+
+      td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+      }
+
+      tr {
+        border-bottom: 1px solid rgb(170, 170, 170);
+      }
+
+      .fa-circle-check {
+        color: rgb(30, 215, 96);
+        font-size: 30px;
+      }
+
+      .fa-circle-xmark {
+        color: rgb(255, 0, 0);
+        font-size: 30px;
+      }
+
+      #difference-table .button {
+        background-color: rgb(25, 20, 20);
+        padding: 12px 40px;
+        font-weight: 500;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        color: rgb(255, 255, 255);
+      }
+
+      /* Styles for the Premium Section */
+      #premium {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+      }
+
+      #premium h2 {
+        margin: 0;
+      }
+
+      #premium .price-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px 100px;
+      }
+
+      @media (max-width: 650px) {
+        #premium .price-cards {
+          grid-template-columns: 1fr;
+          padding: 20px;
+        }
+      }
+
+      .price-card {
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgb(170, 170, 170);
+        padding: 20px;
+      }
+
+      .card-header {
+        border-bottom: 1px solid rgb(170, 170, 170);
+        padding-bottom: 10px;
+      }
+
+      .card-header span {
+        display: inline-block;
+        font-size: 0.75rem;
+        background-color: rgb(13, 114, 234);
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        font-weight: 500;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      }
+
+      .card-header h3 {
+        margin-bottom: 0;
+      }
+
+      .card-header p {
+        margin-bottom: 0;
+        font-weight: 300;
+      }
+
+      .card-body li {
+        font-weight: 500;
+      }
+
+      .price-card button {
+        background-color: rgb(25, 20, 20);
+        padding: 12px 40px;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 100%;
+        transition: transform 0.3s;
+      }
+
+      .price-card button:hover {
+        transform: scale(1.02);
+      }
+
+      /* Styles for the Students Offer Section */
+      #students-offer {
+        background-color: rgb(255, 255, 255); /* Background color */
+        text-align: center; /* Centrally aligned text */
+        padding: 20px; /* 20px gap from the border */
+      }
+
+      #students-offer .button {
+        background-color: rgb(255, 255, 255); /* Background color for buttons */
+        padding: 12px 40px; /* Top & bottom gap of 12px, right & left gap of 40px */
+        font-family: "Poppins", sans-serif; /* Font same as body */
+        color: rgb(25, 20, 20); /* Text color */
+        font-weight: 700; /* Bolder text */
+        border-radius: 20px; /* Rounded borders */
+        cursor: pointer; /* Pointer cursor */
+        transition: transform 0.3s; /* Transition for scaling */
+      }
+
+      #students-offer .button:hover {
+        transform: scale(1.02); /* Scale on hover */
+      }
+
+      #students-offer form {
+        margin-top: 20px; /* Gap from the top */
+        border: 1px solid rgb(170, 170, 170); /* Border style */
+        border-radius: 10px; /* Rounded corners */
+        padding: 25px; /* Padding inside the form */
+        text-align: left; /* Left aligned text */
+      }
+
+      #students-offer #email {
+        font-family: "Poppins", sans-serif; /* Input font same as body */
+        padding: 5px; /* Gap in input */
+        width: 100%; /* Full width */
+        margin-bottom: 5px; /* Gap at the bottom */
+      }
+
+      #students-offer #first-name,
+      #students-offer #last-name {
+        font-family: "Poppins", sans-serif; /* Input font same as body */
+        padding: 5px; /* Gap in input */
+        width: 46%; /* 46% width for input fields */
+      }
+
+      @media (max-width: 650px) {
+        #students-offer #first-name,
+        #students-offer #last-name {
+          width: 100%; /* Full width on small screens */
+          margin-bottom: 5px; /* Gap between input fields */
+        }
+      }
+
+      #students-offer form p {
+        margin-bottom: 0; /* Bottom margin for paragraph */
+      }
+
+      #students-offer #country,
+      #students-offer #college-university {
+        font-family: "Poppins", sans-serif; /* Input font same as body */
+        padding: 5px; /* Gap in input */
+        width: 100%; /* Full width */
+        margin-bottom: 10px; /* Gap at the bottom */
+      }
+
+      #students-offer #contact-number {
+        display: block; /* Block display for input */
+        font-family: "Poppins", sans-serif; /* Input font same as body */
+        padding: 5px; /* Gap in input */
+        width: 100%; /* Full width */
+        margin-bottom: 10px; /* Gap at the bottom */
+      }
+
+      #students-offer #consent-checkbox {
+        cursor: pointer; /* Pointer cursor on hover */
+      }
+
+      #students-offer form button {
+        display: block; /* Block display for button */
+        margin-top: 10px; /* Margin on top for space */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="spimg">
+        <a href="/">
+          <img
+            src="https://play-lh.googleusercontent.com/eN0IexSzxpUDMfFtm-OyM-nNs44Y74Q3k51bxAMhTvrTnuA4OGnTi_fodN4cl-XxDQc=w600-h300-pc0xffffff-pd"
+            alt="spotify-logo"
+          />
+        </a>
+      </div>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Premium</a></li>
+        <li><a href="#">Download</a></li>
+      </ul>
+    </nav>
+
+    <main id="download">
+      <h1>Introducing Premium Mini</h1>
+      <h2>₹7 for 1 day. ₹25 for 1 week.</h2>
+      <section>
+        <a href="#" class="button">
+          <i class="fa-brands fa-google-play"></i> DOWNLOAD
+        </a>
+        <a href="#" class="button">
+          <i class="fa-brands fa-apple"></i> DOWNLOAD
+        </a>
+      </section>
+    </main>
+
+    <section id="difference-table">
+      <h1>Experience the difference</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>What you get</th>
+            <th>Premium Plan</th>
+            <th>Free Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Access to all audio content</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+          </tr>
+          <tr>
+            <td>Ad-free music listening</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+          </tr>
+          <tr>
+            <td>Enhanced playlists</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+          </tr>
+          <tr>
+            <td>Download songs</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+          </tr>
+          <tr>
+            <td>Group sessions</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+          </tr>
+          <tr>
+            <td>Highest audio quality</td>
+            <td><i class="fa-regular fa-circle-check"></i></td>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section>
+        <h1>Get 3 months of Premium for free.</h1>
+        <button class="button">GET 3 MONTHS FREE</button>
+      </section>
+    </section>
+
+    <section id="premium">
+      <h2>Premium Plans</h2>
+      <div class="price-cards">
+        <article class="price-card">
+          <div class="card-header">
+            <span>Popular</span>
+            <h3>Premium Individual</h3>
+            <p>₹119/month after offer period</p>
+          </div>
+          <ul class="card-body">
+            <li>Ad-free music listening</li>
+            <li>Download to listen offline</li>
+            <li>High quality audio</li>
+            <li>On-demand playback</li>
+          </ul>
+          <button class="button">GET PREMIUM</button>
+        </article>
+
+        <article class="price-card">
+          <div class="card-header">
+            <h3>Premium Duo</h3>
+            <p>₹149/month after offer period</p>
+          </div>
+          <ul class="card-body">
+            <li>Ad-free music listening</li>
+            <li>Download to listen offline</li>
+            <li>High quality audio</li>
+            <li>On-demand playback</li>
+          </ul>
+          <button class="button">GET PREMIUM</button>
+        </article>
+
+        <article class="price-card">
+          <div class="card-header">
+            <h3>Premium Family</h3>
+            <p>₹179/month after offer period</p>
+          </div>
+          <ul class="card-body">
+            <li>Ad-free music listening</li>
+            <li>Download to listen offline</li>
+            <li>High quality audio</li>
+            <li>On-demand playback</li>
+          </ul>
+          <button class="button">GET PREMIUM</button>
+        </article>
+
+        <article class="price-card">
+          <div class="card-header">
+            <h3>Premium Student</h3>
+            <p>₹59/month after offer period</p>
+          </div>
+          <ul class="card-body">
+            <li>Ad-free music listening</li>
+            <li>Download to listen offline</li>
+            <li>High quality audio</li>
+            <li>On-demand playback</li>
+          </ul>
+          <button class="button">GET PREMIUM</button>
+        </article>
+      </div>
+    </section>
+    <section id="students-offer">
+      <h2>Special Offer for Students</h2>
+      <p>Sign up with your details to get exclusive offers.</p>
+      <div>
+        <a href="#" class="button">Claim Your Offer</a>
+      </div>
+      <form>
+        <label for="first-name">First Name</label>
+        <input
+          type="text"
+          id="first-name"
+          placeholder="Enter your first name"
+        />
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" placeholder="Enter your last name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <label for="country">Country</label>
+        <select id="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <label for="college-university">College/University</label>
+        <select id="college-university">
+          <option value="university1">University 1</option>
+          <option value="university2">University 2</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <label for="contact-number">Contact Number</label>
+        <input
+          type="tel"
+          id="contact-number"
+          placeholder="Enter your contact number"
+        />
+
+        <label>
+          <input type="checkbox" id="consent-checkbox" /> I agree to the terms
+          and conditions
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <div style="text-align: center; padding: 20px; color: white">
+        <p>&copy; 2024 Spotify, Inc.</p>
+      </div>
+    </footer>
+  </body>
+</html>

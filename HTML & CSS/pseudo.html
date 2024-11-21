@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover and Active Pseudo-Class Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            padding: 10px;
+            border: 1px solid blue;
+            display: inline-block;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 2px solid #333;
+            background-color: #fff;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        a:hover {
+            background-color: lightblue;
+            color: white;
+        }
+
+        button:hover {
+            background-color: lightgreen;
+        }
+
+        a:active {
+            background-color: blue;
+            color: white;
+        }
+
+        button:active {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hover and Active Pseudo-Class Example</h1>
+
+    <a href="#">Hover over me</a>
+    <br><br>
+
+    <button><a href="https://www.google.com/">Hover and Click Me!</a></button>
+
+</body>
+</html>
