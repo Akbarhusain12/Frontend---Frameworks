@@ -151,6 +151,7 @@ car.Wheel = 4
 console.log(car);
 */
 
+
 //Create an object calculator with two methods: add(a, b) and multiply(a, b). Test the methods.
 
 /*
