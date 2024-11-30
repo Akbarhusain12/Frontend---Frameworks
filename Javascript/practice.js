@@ -102,4 +102,53 @@ function obj_str(a, b) {
   obj_str(x, str);
 */
 
+// Write a program that prints all numbers from 1 to 10, but skips the number 5
 
+/*
+for (let i = 0; i <= 10; i++) {
+    if (i == 5) {
+        continue
+    }
+    console.log(i);    
+}
+*/
+
+// Create a program that prints numbers from 1 to 20 but stops when it encounters a number divisible by 7
+
+/*
+for (let i = 1; i <= 20; i++) {
+  if (i % 7 == 0) {
+    break;
+  }
+  console.log(i);
+}
+*/
+
+//Create an object to represent a book with properties: title, author, and year. Access and print each property.
+
+/*
+let book = {
+    title : "The Power Of Now",
+    author : "Richard"
+}
+
+for ( i in book){
+    console.log(i,"-",book[i]);
+}
+*/
+
+
+
+//Write a program to update the value of an object’s property and add a new property to the object.
+
+/*
+let car = {
+    Name : "Bently",
+    color : "Purple",
+    Wheel : 2
+}
+
+car.Wheel = 4
+
+console.log(car);
+*/
