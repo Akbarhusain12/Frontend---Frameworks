@@ -137,8 +137,6 @@ for ( i in book){
 }
 */
 
-
-
 //Write a program to update the value of an object’s property and add a new property to the object.
 
 /*
@@ -152,3 +150,22 @@ car.Wheel = 4
 
 console.log(car);
 */
+
+//Create an object calculator with two methods: add(a, b) and multiply(a, b). Test the methods.
+
+/*
+let calculator = {
+  add1: function add(x, y) {
+    return x + y;
+  },
+
+  mul1: function mul(x, y) {
+    return x * y;
+  },
+};
+
+console.log(calculator.add1(10,20));
+console.log(calculator.mul1(10,20));
+*/
+
+
