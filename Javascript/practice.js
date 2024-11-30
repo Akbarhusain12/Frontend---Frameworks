@@ -151,7 +151,6 @@ car.Wheel = 4
 console.log(car);
 */
 
-
 //Create an object calculator with two methods: add(a, b) and multiply(a, b). Test the methods.
 
 /*
@@ -169,4 +168,54 @@ console.log(calculator.add1(10,20));
 console.log(calculator.mul1(10,20));
 */
 
+//Write an object person with properties firstName and lastName and a method getFullName() that returns the full name.
 
+/*
+let person = {
+  firstName: "Akbar",
+  lastName: "Husain",
+  fullName: function full_na(firstName, lastName) {
+    console.log(person.firstName +" " +person.lastName);
+    
+  },
+};
+
+person.fullName()
+*/
+
+//Write a function that takes an object as input and returns an array of all the keys in the object.
+
+/*
+function example(obj) {
+  return Object.keys(obj);
+}
+
+const x = {
+  firstName: "Akbar",
+  lastName: "Husain",
+};
+
+console.log(example(x)); 
+*/
+
+
+//Write a program to merge two objects:javascript
+
+/*
+let obj1 = {
+  a: 1,
+  b: 2,
+};
+
+let obj2 = {
+  c: 3,
+  d: 4,
+};
+
+let obj3 = {
+  ...obj1,
+  ...obj2
+};
+
+console.log(obj3);
+*/
