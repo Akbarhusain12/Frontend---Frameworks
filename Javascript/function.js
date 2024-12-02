@@ -35,13 +35,31 @@ function add(x,y) {
 
 // str("Akbar husain");
 
-const numbers = [1, 2, 3, 4, 5];
-const doubled = [];
+// const numbers = [1, 2, 3, 4, 5];
+// const doubled = [];
+
+// numbers.forEach(num => {
+//     doubled.push(num * 2);
+// });
+
+// console.log(doubled); 
+// console.log(numbers);
+
+// const fruits = ["pune", "mumbai", "delhi"];
+
+// fruits.forEach((fruit,index) => {
+//     console.log(index,fruit.toUpperCase());
+// });
+
+const numbers = [2,5,9,13,11];
+// const doubled = [];
 
 numbers.forEach(num => {
-    doubled.push(num * 2);
+    // doubled.push(num ** 2);
+    console.log(num ** 2);
+    
 });
 
-console.log(doubled); 
-console.log(numbers);
+
+// console.log(doubled)
 
