@@ -198,7 +198,6 @@ const x = {
 console.log(example(x)); 
 */
 
-
 //Write a program to merge two objects:javascript
 
 /*
@@ -219,3 +218,11 @@ let obj3 = {
 
 console.log(obj3);
 */
+
+// Working with Arrays of Objects
+
+// let students = [
+//   { name: "Alice", age: 22 },
+//   { name: "Bob", age: 20 },
+//   { name: "Charlie", age: 23 },
+// ];
