@@ -51,15 +51,17 @@ function add(x,y) {
 //     console.log(index,fruit.toUpperCase());
 // });
 
-const numbers = [2,5,9,13,11];
+// const numbers = [2,5,9,13,11];
 // const doubled = [];
 
-numbers.forEach(num => {
-    // doubled.push(num ** 2);
-    console.log(num ** 2);
+// numbers.forEach(num => {
+//     doubled.push(num ** 2);
+//     console.log(num ** 2);
     
-});
+// });
 
 
 // console.log(doubled)
+
+
 
