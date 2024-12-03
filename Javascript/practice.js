@@ -221,8 +221,26 @@ console.log(obj3);
 
 // Working with Arrays of Objects
 
-// let students = [
-//   { name: "Alice", age: 22 },
-//   { name: "Bob", age: 20 },
-//   { name: "Charlie", age: 23 },
-// ];
+/*
+let students = [
+  { name: "Alice", age: 22 },
+  { name: "Bob", age: 20 },
+  { name: "Charlie", age: 23 },
+];
+
+let oldestStudent = students.reduce((oldest, current) => {
+  return (current.age > oldest.age) ? current : oldest;
+});
+
+console.log("Oldest student:", oldestStudent);
+
+
+students.forEach(student => {
+  student.grade = Math.floor(Math.random() * 10);
+});
+
+console.log("Students with grades:", students);
+*/
+
+
+//Create a function that takes an object and returns a deep clone of it (without using JSON methods).
