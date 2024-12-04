@@ -244,3 +244,15 @@ console.log("Students with grades:", students);
 
 
 //Create a function that takes an object and returns a deep clone of it (without using JSON methods).
+
+const originalObject = {
+  name: 'John Doe',
+  age: 30,
+  address: {
+    city: 'New York',
+    country: 'USA',
+  },
+};
+
+const clonedObject = originalObject
+console.log(clonedObject);
