@@ -328,3 +328,8 @@ console.log(toggleCase("Hello"));
 
 // x  = y.split(",")
 // console.log(x);
+
+
+// x = "This is a test. Is it working?"
+// console.log(x.replace(/is/,"was"));
+
