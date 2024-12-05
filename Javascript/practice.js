@@ -6,15 +6,17 @@
 
 // 2 - while loop to calculate the sum of numbers from 1 to 100.
 
-/* sum = 0 
+/*
+sum = 0
 i = 0
-n = 100
+n = 5
 while (i <= n) {
-    sum += i
+    sum = sum + i
     i++
 }
 
-console.log(sum); */
+console.log(sum); 
+*/
 
 // nested loop
 
@@ -242,9 +244,9 @@ students.forEach(student => {
 console.log("Students with grades:", students);
 */
 
-
 //Create a function that takes an object and returns a deep clone of it (without using JSON methods).
 
+/*
 const originalObject = {
   name: 'John Doe',
   age: 30,
@@ -256,3 +258,4 @@ const originalObject = {
 
 const clonedObject = originalObject
 console.log(clonedObject);
+*/
