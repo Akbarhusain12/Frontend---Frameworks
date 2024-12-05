@@ -259,3 +259,72 @@ const originalObject = {
 const clonedObject = originalObject
 console.log(clonedObject);
 */
+
+// Basic String Manipulation
+/*
+let x = "Hello, World!"
+console.log(x.length);
+*/
+
+/*
+function isLonger(str1, str2){
+  if(str1.length > str2.length){
+    console.log(str1);
+  }
+  else{
+    console.log(str2)
+  }
+}
+
+isLonger("Akbarhusain", "Wali")
+*/
+
+/*
+let x = "JavaScript"
+console.log(x[0]);   
+console.log(x[x.length - 1]); 
+*/
+
+/*
+function num_charat(a, b) {
+  console.log(a[b]);
+} 
+
+num_charat("akbarhusain", 5)
+*/
+
+/*
+let x = "HEllo"
+let y = "javascript"
+
+console.log(x.toLowerCase())
+console.log(y.toUpperCase())
+*/
+
+/*
+let toggleCase = (str) => {
+  let x = "";
+  for (let i of str) {
+    if (i === i.toUpperCase()) {
+      x += i.toLowerCase();
+    } else {
+      x += i.toUpperCase();
+    }
+  }
+  return x;
+};
+
+console.log(toggleCase("Hello"));
+*/
+
+
+// x = "Akbar"
+// age = 22
+
+// console.log(`My name is ${x} and I am ${age} years old`);
+
+
+// y = "apple,banana,orange"
+
+// x  = y.split(",")
+// console.log(x);
