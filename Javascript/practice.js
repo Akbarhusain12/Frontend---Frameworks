@@ -33,11 +33,10 @@ for (let n = 1; n <= 5; n++) {
 // table 1 to 5
 
 /*
-for (let i = 1; i <= 5; i++) {
-    for (let j = 1; j <= 10; j++) {
-        console.log(`${i} * ${j} = ${i * j}`);
-    }
-    console.log("\n");
+for (let i = 0; i <= 5; i++) {
+  for (j = 0; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`);
+  }
 }
 */
 
@@ -45,9 +44,9 @@ for (let i = 1; i <= 5; i++) {
 
 /*
 let numbers = [10, 20, 30, 40, 50]
-sum = 0 
-for(i=0 ; i < numbers.length; i++){
-    sum += numbers[i]
+sum=0
+for(i = 0; i<numbers.length; i++){
+  sum += numbers[i]
 }
 
 console.log(sum);
@@ -59,10 +58,10 @@ console.log(sum);
 let arr = [3, 5535, 7,34,2, 2, 98]
 max_num = 0
 
-for (i of arr) {
-    if (i > max_num) {
-        max_num = i
-    }
+for (i of arr){
+  if(max_num < i){
+    max_num = i
+  }
 }
 
 console.log(max_num);
@@ -77,7 +76,7 @@ let user = {
   city: "New York",
 };
 
-for ( i in user){
+for (i in user){
     console.log(i, user[i]);
 }
 
@@ -317,19 +316,15 @@ let toggleCase = (str) => {
 console.log(toggleCase("Hello"));
 */
 
-
 // x = "Akbar"
 // age = 22
 
 // console.log(`My name is ${x} and I am ${age} years old`);
-
 
 // y = "apple,banana,orange"
 
 // x  = y.split(",")
 // console.log(x);
 
-
 // x = "This is a test. Is it working?"
 // console.log(x.replace(/is/,"was"));
-
